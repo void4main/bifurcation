@@ -1,4 +1,4 @@
-# bifurcation
+# plot bifurcation diagram 
 
 This little python script plots a bifurcation diagram into a png file.
 
