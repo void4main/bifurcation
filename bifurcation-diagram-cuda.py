@@ -17,11 +17,11 @@ def main():
     step = 0.0001
 
     X = np.arange(start, stop, step, dtype="float32")
-    n = int((stop-start)/step)+1
-    Y = np.zeros(n, dtype="float32")
-    Y = CalcBifurcation(X,Y,150)
+    Y = np.zeros(len(X), dtype="float32")
+    
+    #Y = CalcBifurcation(X,Y,150)
 
-    plt.xlim(2.8,4)
+    plt.xlim(start,stop)
     for i in range(1,150):
         Y = CalcBifurcation(X,Y,i)
         if i > 140:
